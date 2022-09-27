@@ -1,0 +1,335 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #d4cbcb;
+}
+header{
+    grid-area: header ;
+    padding: 5%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+nav{
+    grid-area: nav;
+    
+    }
+    
+
+article{
+    grid-area: article;
+    margin: 2%;
+
+
+}
+aside{
+    grid-area:aside ;
+
+    padding: 5%;
+    background-color: rgb(73, 72, 70);
+    margin: 0%;
+    
+    
+   
+}
+footer{
+    grid-area: footer;
+    padding: 5%;
+    border-top: 3px solid black ;
+   
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20%;
+  
+    
+    
+}
+footer ul li {
+    list-style: none;
+    margin-left: 6%;
+    
+}
+.btn_menu{
+    padding: 3%;
+    margin-bottom: 5%;
+    color: #87866E ;
+    display: flex;
+    border: 2px solid black;
+    user-select: none;
+}
+ ul.navigation{
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    padding-top: 1%;
+   padding-bottom: 1%;
+    background-color: black;
+    justify-content: flex-start;
+    padding-left: 0%;
+
+   
+
+}
+ul.navigation li{
+    margin: 1%;
+    padding: 1%;
+    color: #0e0d0d;
+    user-select: none;
+    margin-bottom: -1%;
+    color: aliceblue;
+    margin-right: 59%;
+  
+}
+ul.navigation li:hover{
+    background-color: #b9a9a9;
+}
+
+ul.navigation.show{
+    display: flex;
+}
+
+
+.secciondehistoria figure{
+    display: flex;
+    justify-content: center;
+
+}
+.secciondehistoria img {
+    height: 70%;
+    width: 70%;
+}
+
+
+p{
+    font-family: sans-serif ;
+    margin-top: 5%;
+    text-align: start;
+}
+
+
+.publicidad figure{
+
+   padding-top: 50%;
+}
+.publicidad figure figcaption{
+    margin-bottom: 7%;
+}
+
+
+
+.publicidad  img{
+    
+    height: 11rem;
+    width: 20rem;
+
+}
+.logo{
+    display: none;
+}
+ .entrenamientosAerobicos img{
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+}
+ .entrenamientosAerobicos figure{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-top: 20%;
+}
+.contador{
+    visibility: hidden;
+}
+.mostrarcontador,.mostrarcontador span{
+    visibility: visible;
+    text-decoration: solid;
+}
+
+   
+
+.entrenamientosGimnasio ul li{
+    color: #030202;
+    font-size: larger;
+    font-family: sans-serif
+}
+table , th , td{
+    border-collapse: collapse;
+    border: solid black 2px;
+    
+}
+.validacion {
+    display: flex;
+    padding-top: 10%;
+    justify-content: center;
+    
+   
+}
+.validacion form{
+    background-color: #030202;
+    border: #030202 solid 15px;
+}
+.validacion label{
+    display: flex;
+    flex-direction: column;
+    color: #cfcfcb;
+}
+.validacion input{
+    padding: 5%;
+    border: #646458 10px solid;
+    
+}
+.validacion div{
+    padding-bottom: 7%;
+}
+.divFormTablaDinamica input  {
+    padding: 1.5%;
+    margin: 2%;
+    
+    
+    
+}
+.divFormTablaDinamica button img{
+    height: 1.5rem;
+    width: 1.5rem;
+   
+}
+
+
+.divFormTablaDinamica  button{
+    margin-top:3%;
+    padding: 1%;
+
+}
+
+.divFormTablaDinamica figure{
+
+    padding:0%;
+    margin: 0%;
+}
+
+ 
+.divFormTablaDinamica table {
+ margin-left: 15%;
+ margin-right: 10%;
+ 
+} 
+.divFormTablaDinamica{
+    display: flex;
+    flex-direction: column;
+   
+}  
+.divTablaDinamica{
+    margin-left: 20%;
+}
+.validacion p span {
+    color: #cfcfcb;
+    padding-top: 2%;
+
+}
+.validacion p {
+    color: #cfcfcb;
+}
+.captchaNone{
+    display: none;
+}
+.seleccionado{
+    background-color: #d4cbcb;
+   
+}
+
+
+
+
+
+
+@media only screen and (min-width:660px){
+    body{
+        margin: 0%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-template-areas: "header header"    
+                              "nav nav"
+                              "article aside"
+                              "footer footer";
+
+                            
+    }
+    header{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-bottom: 2px rgb(70, 69, 69) ;
+        padding-top: 0%;
+        
+        
+
+    }
+    .btn_menu{
+        display: none;
+        
+    }
+    ul.navigation{
+        display: flex;
+        list-style: none;
+        background-color: #5c5b5b;
+        flex-direction: row;
+        padding-left: 2%;
+    
+    }
+    ul.navigation li{
+        margin: 0%;
+        color: #0e0d0d;
+        user-select: none;
+       margin-bottom: -1%;
+        
+        
+       
+      
+    }
+   
+    footer ul{
+        margin-left: 8%;
+    }
+    .logo{
+        display: flex;
+        padding-top: 4%
+    }
+    h1{
+        margin-top: 10%;
+        font-size: 80px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(70, 69, 69);
+    }
+    .promotoresdelfitness{
+        padding-top: 10%;
+    }
+    table , tbody , th , td{
+        border-collapse: collapse;
+        border: solid black 2px;
+        
+    }
+    .contador{
+        visibility: hidden;
+    }
+    .mostrarcontador,.mostrarcontador span{
+        visibility: visible;
+        text-decoration: solid;
+    }
+
+    
+    
+   
+    
+
+    }
+
+  
+    
+   
